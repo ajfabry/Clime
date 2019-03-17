@@ -5,3 +5,4 @@ Simple weather app built using Swift 4.2. Displays forecasted high, forecasted l
 Still TODO:
 - Sync animated effects with current weather conditions
 - Sync recommended accessories (e.g. umbrella, jacket) with current weather conditions
+- Add daily notification
