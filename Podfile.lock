@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.8.1)
+  - lottie-ios-extension (1.5.1.1)
+  - SwiftyJSON (4.2.0)
+  - URWeatherView (0.7.0):
+    - lottie-ios-extension
+    - URWeatherView/Core (= 0.7.0)
+  - URWeatherView/Core (0.7.0):
+    - lottie-ios-extension
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftyJSON
+  - URWeatherView (~> 0.7)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - lottie-ios-extension
+    - SwiftyJSON
+    - URWeatherView
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  lottie-ios-extension: 219b261ba9f3d6a0cda7cf84bbfb545aa5806153
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  URWeatherView: 4a716a83149f788220ec156047e4d0e8517835bf
+
+PODFILE CHECKSUM: 57a3e100ac8b893b1f8186067c73898a804955f6
+
+COCOAPODS: 1.5.3
