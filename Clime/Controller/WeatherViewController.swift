@@ -22,7 +22,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     let weatherDataModel = WeatherDataModel()
 
     @IBOutlet weak var temperatureLabel: UILabel!
-    @IBOutlet weak var clothingLabel: UILabel!
+    @IBOutlet weak var clothingLabel: UILabel!      // TODO: - add functionality
     @IBOutlet weak var highTemperatureLabel: UILabel!
     @IBOutlet weak var lowTemperatureLabel: UILabel!    
     @IBOutlet weak var mainView: URWeatherView!
@@ -78,31 +78,24 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     // MARK: - Alamofire Networking
     
     func getWeatherData(url: String, parameters: [String: String]) {
-        
         Alamofire.request(url, method: .get, parameters: parameters).responseJSON {
             response in
             if response.result.isSuccess {
-                print("Success: got the weather data")
-                
+                print("Weather data retrieved successfully")
                 let weatherJSON : JSON = JSON(response.result.value!)
                 self.updateWeatherData(json: weatherJSON)
-                
             }
             else {
                 print("Error \(String(describing: response.result.error))")
-                
             }
         }
-        
     }
     
     // MARK: - JSON Parsing
     
     func updateWeatherData(json: JSON) {
         if let currentTemp = json["list"][0]["main"]["temp"].double {
-            print("Current temperature: \(currentTemp)")
             weatherDataModel.currentTemp = Int((currentTemp - 273.15) * 1.8 + 32)
-            
             guard var highTemp = json["list"][0]["main"]["temp_max"].double else {fatalError("Weather Data Unavailable")}
             guard var lowTemp = json["list"][0]["main"]["temp_min"].double else {fatalError("Weather Data Unavailable")}
             for index in 0...8 {
