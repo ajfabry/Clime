@@ -31,9 +31,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         self.mainView.initView(mainWeatherImage: #imageLiteral(resourceName: "campus"), backgroundImage: #imageLiteral(resourceName: "brightdesktop"))
-        showWeather()
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
@@ -43,8 +41,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     
     // MARK: - Weather Effects
     
-    func showWeather() {    // TODO: - sync effect with weather data
-        let weather: URWeatherType = .rain
+    func showWeather(condition: URWeatherType) {    // TODO: - sync effect with weather data
+        let weather: URWeatherType = condition
         self.mainView.startWeatherSceneBulk(weather, debugOption: true, additionalTask: {
             // task what you want to do after showing the weather effect...
         })
@@ -109,6 +107,9 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
             weatherDataModel.highTemp = Int((highTemp - 273.15) * 1.8 + 32)
             weatherDataModel.lowTemp = Int((lowTemp - 273.15) * 1.8 + 32)
             
+            guard let currentCondition = json["list"][0]["weather"][0]["id"].int else {fatalError("Weather Data Unavailable")}
+            weatherDataModel.weatherID = currentCondition
+            
             updateUI()
         }
     }
@@ -119,6 +120,8 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         temperatureLabel.text = "\(weatherDataModel.currentTemp)°"
         highTemperatureLabel.text = "High: \(weatherDataModel.highTemp)°"
         lowTemperatureLabel.text = "Low: \(weatherDataModel.lowTemp)°"
+        clothingLabel.text = weatherDataModel.updateClothing(temperature: weatherDataModel.currentTemp)
+        showWeather(condition: weatherDataModel.updateAnimation(condition: weatherDataModel.weatherID))
     }
 
 }
