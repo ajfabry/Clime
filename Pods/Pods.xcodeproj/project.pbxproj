@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -238,12 +238,12 @@
 		1E53C2359FF352A4F494DDA066CF45B0 /* Pods-Clime-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clime-resources.sh"; sourceTree = "<group>"; };
 		1E545BA5CF74DF2DF141C3EB6936B732 /* LOTAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAsset.h; path = "lottie-ios/Classes/Models/LOTAsset.h"; sourceTree = "<group>"; };
 		1F1E5CA594F3DAF7712564C4A67027ED /* LOTShapeLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeLayerView.h; path = "lottie-ios/Classes/AnimatableLayers/LOTShapeLayerView.h"; sourceTree = "<group>"; };
-		21070A9ED3B9E0699A8E901C069D31EE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21070A9ED3B9E0699A8E901C069D31EE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2304762517DF324B3EA2D936CE6DCCB5 /* Pods-Clime-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clime-frameworks.sh"; sourceTree = "<group>"; };
 		23EC16E094ECC758839DE4C912A7FE12 /* URToneCurveFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URToneCurveFilter.swift; path = URWeatherView/Filter/URToneCurveFilter.swift; sourceTree = "<group>"; };
 		244F80E9EF9EA95CE3EDC6720D45D32D /* LOTShapeGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeGroup.h; path = "lottie-ios/Classes/Models/LOTShapeGroup.h"; sourceTree = "<group>"; };
 		25E9097889870F85AF23155CBB4CEE3F /* LOTAnimatableBoundsValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableBoundsValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableBoundsValue.h"; sourceTree = "<group>"; };
-		294F9467FBCBBDED6B774D94ED5D8ED7 /* Pods_Clime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clime.framework; path = "Pods-Clime.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		294F9467FBCBBDED6B774D94ED5D8ED7 /* Pods_Clime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D9A7ECC22D792FAA40F6D0341A9801 /* URToneCurveView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = URToneCurveView.xib; path = URWeatherView/UI/URToneCurveView.xib; sourceTree = "<group>"; };
 		2A81471B26B1BD5C8769443A2B96CA32 /* URToneCurveGraphView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URToneCurveGraphView.swift; path = URWeatherView/UI/URToneCurveGraphView.swift; sourceTree = "<group>"; };
 		2AC8578D16BED85EB30FD27CA3ECBC8E /* LottieEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LottieEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,7 +271,7 @@
 		46FD509DEF9A854A7F0700AF54CAC981 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		4908491915A7D8D8F572FAA760282FE9 /* LOTCompositionLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTCompositionLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTCompositionLayer.m"; sourceTree = "<group>"; };
 		4A508931C243309557D42C85D293F4A0 /* UREffectOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UREffectOption.swift; path = URWeatherView/Effect/UREffectOption.swift; sourceTree = "<group>"; };
-		4A78521D46B9314C67694A8DA2468D20 /* URKernelShaderRGBToneCurve.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; name = URKernelShaderRGBToneCurve.cikernel.fsh; path = Resources/Shaders/URKernelShaderRGBToneCurve.cikernel.fsh; sourceTree = "<group>"; };
+		4A78521D46B9314C67694A8DA2468D20 /* URKernelShaderRGBToneCurve.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.glsl; name = URKernelShaderRGBToneCurve.cikernel.fsh; path = Resources/Shaders/URKernelShaderRGBToneCurve.cikernel.fsh; sourceTree = "<group>"; };
 		4B855882D27F89761A2C6D46C2BA614F /* LOTRectShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTRectShapeLayer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTRectShapeLayer.h"; sourceTree = "<group>"; };
 		4BC8A0117F39B9C97B5B56B0FB264003 /* LOTShapeRectangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeRectangle.h; path = "lottie-ios/Classes/Models/LOTShapeRectangle.h"; sourceTree = "<group>"; };
 		4C00F0E317061C62965BB5D9B93C57CB /* URBurningCometEmitterNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URBurningCometEmitterNode.swift; path = URWeatherView/SpriteAssets/URBurningCometEmitterNode.swift; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 		58885FF82719D8AE6DA7803EA2631D6A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		5A35754EA1482C49F1B5F98A6416D1B8 /* LOTLayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTLayerView.h; path = "lottie-ios/Classes/AnimatableLayers/LOTLayerView.h"; sourceTree = "<group>"; };
 		5ACC7940098112A1DBC52B6209D4DDAC /* LOTAnimatableScaleValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableScaleValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableScaleValue.h"; sourceTree = "<group>"; };
-		5BBFA73709DF2D6B6F02F41FACEEE35A /* URKernelShaderShockWave.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; name = URKernelShaderShockWave.cikernel.fsh; path = Resources/Shaders/URKernelShaderShockWave.cikernel.fsh; sourceTree = "<group>"; };
+		5BBFA73709DF2D6B6F02F41FACEEE35A /* URKernelShaderShockWave.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.glsl; name = URKernelShaderShockWave.cikernel.fsh; path = Resources/Shaders/URKernelShaderShockWave.cikernel.fsh; sourceTree = "<group>"; };
 		5D0FD1E87FBBDF50ACC7C50B2FA6BBA9 /* URFilterAppliable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URFilterAppliable.swift; path = URWeatherView/Filter/URFilterAppliable.swift; sourceTree = "<group>"; };
 		5D6E706425177DF3E8BCF36A3804BEBA /* URFilterBootLoading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URFilterBootLoading.swift; path = URWeatherView/Filter/URFilterBootLoading.swift; sourceTree = "<group>"; };
 		5DA519D2C00DEDEAD87429B3A1AD0105 /* UIBezierPath+Interpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBezierPath+Interpolation.swift"; path = "URWeatherView/Filter/UIBezierPath+Interpolation.swift"; sourceTree = "<group>"; };
@@ -311,7 +311,7 @@
 		6E7AE639BE1C072812AE45640A9F92F0 /* LOTShapeCircle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeCircle.m; path = "lottie-ios/Classes/Models/LOTShapeCircle.m"; sourceTree = "<group>"; };
 		6E815920682988ED2F89B355D4EC7EBA /* LOTStrokeShapeLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTStrokeShapeLayer.m; path = "lottie-ios/Classes/AnimatableLayers/LOTStrokeShapeLayer.m"; sourceTree = "<group>"; };
 		6EED63FD41FA7C3BFBE9F435D842E8AF /* URRainEmitterNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URRainEmitterNode.swift; path = URWeatherView/SpriteAssets/URRainEmitterNode.swift; sourceTree = "<group>"; };
-		6FF018BBED8A68E9671064BDB51F261E /* URKernelShaderFrostedGlass.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; name = URKernelShaderFrostedGlass.cikernel.fsh; path = Resources/Shaders/URKernelShaderFrostedGlass.cikernel.fsh; sourceTree = "<group>"; };
+		6FF018BBED8A68E9671064BDB51F261E /* URKernelShaderFrostedGlass.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.glsl; name = URKernelShaderFrostedGlass.cikernel.fsh; path = Resources/Shaders/URKernelShaderFrostedGlass.cikernel.fsh; sourceTree = "<group>"; };
 		725523B53C7B110A8F57155EDE95D285 /* LOTAnimatableShapeValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTAnimatableShapeValue.h; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableShapeValue.h"; sourceTree = "<group>"; };
 		727EF7C463C8E5D3CCFE27A8070E46FD /* LOTLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTLayer.m; path = "lottie-ios/Classes/Models/LOTLayer.m"; sourceTree = "<group>"; };
 		75069E0841904DD96FEF5BB0EC870A83 /* LOTStrokeShapeLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTStrokeShapeLayer.h; path = "lottie-ios/Classes/AnimatableLayers/LOTStrokeShapeLayer.h"; sourceTree = "<group>"; };
@@ -331,22 +331,22 @@
 		8E2045E7366142F24B2E505CA20F44EE /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		8E93F5CD06D85A5AAEB5D8E9A19940F6 /* LOTAnimatableBoundsValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableBoundsValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableBoundsValue.m"; sourceTree = "<group>"; };
 		92628356F735042AB824A2C914D65516 /* Pods-Clime-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clime-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93DD97F8A4B50E853DEF62D646C13F9D /* LOTAnimatableColorValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTAnimatableColorValue.m; path = "lottie-ios/Classes/AnimatableProperties/LOTAnimatableColorValue.m"; sourceTree = "<group>"; };
 		947EE3A557ADEFE0C8583FC2466F27C1 /* Pods-Clime.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clime.modulemap"; sourceTree = "<group>"; };
 		94BF609A36332AC07D09888B9890F668 /* Pods-Clime-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clime-acknowledgements.plist"; sourceTree = "<group>"; };
-		9A236D0C849E7E00944142FBA4994021 /* LottieEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LottieEx.framework; path = "lottie-ios-extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A236D0C849E7E00944142FBA4994021 /* LottieEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LottieEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D348C5FACA56CFA8222973DCD72C21A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		9EA2A2B4F4B9E62F7E6E249AA7B855DD /* LOTShapeTrimPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeTrimPath.h; path = "lottie-ios/Classes/Models/LOTShapeTrimPath.h"; sourceTree = "<group>"; };
 		9F6E166CA3952ECC8DE008D10437B49F /* lottie-ios-extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-extension-dummy.m"; sourceTree = "<group>"; };
 		A146606CD4B415DD6B0AC06746E51284 /* MyParticleSnowGround.sks */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.sks; name = MyParticleSnowGround.sks; path = URWeatherView/SpriteAssets/MyParticleSnowGround.sks; sourceTree = "<group>"; };
 		A1DE5175D173DEDA54FCE963C94003F6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		A4049E3949B9E4FA0D2B77001990DC5D /* URFilterUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URFilterUtil.swift; path = URWeatherView/Filter/URFilterUtil.swift; sourceTree = "<group>"; };
-		A4A6F5A322B5C9DC3889A362254D8313 /* URKernelShaderRipple.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; name = URKernelShaderRipple.cikernel.fsh; path = Resources/Shaders/URKernelShaderRipple.cikernel.fsh; sourceTree = "<group>"; };
+		A4A6F5A322B5C9DC3889A362254D8313 /* URKernelShaderRipple.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.glsl; name = URKernelShaderRipple.cikernel.fsh; path = Resources/Shaders/URKernelShaderRipple.cikernel.fsh; sourceTree = "<group>"; };
 		A4D561E1AED93D066C3F30A93BD2E749 /* LOTMask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTMask.m; path = "lottie-ios/Classes/Models/LOTMask.m"; sourceTree = "<group>"; };
 		A59644CAAE8B4BF92402AFE7A20AD723 /* LOTLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTLayer.h; path = "lottie-ios/Classes/Models/LOTLayer.h"; sourceTree = "<group>"; };
 		A5A102B15AEBED60E44BDB4C057B0D13 /* URWeatherView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URWeatherView-umbrella.h"; sourceTree = "<group>"; };
-		A5F0CB215646475644E91DF8DBA81F98 /* URKernelShaderWaveWarp.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; name = URKernelShaderWaveWarp.cikernel.fsh; path = Resources/Shaders/URKernelShaderWaveWarp.cikernel.fsh; sourceTree = "<group>"; };
+		A5F0CB215646475644E91DF8DBA81F98 /* URKernelShaderWaveWarp.cikernel.fsh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.glsl; name = URKernelShaderWaveWarp.cikernel.fsh; path = Resources/Shaders/URKernelShaderWaveWarp.cikernel.fsh; sourceTree = "<group>"; };
 		A6205A99ECABB06D9793DB657CC1AFD3 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		A9D090F640F2849EDCAA0A16CB6450B8 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		AA3CE2F4812D8EB49DCB741B3D29897D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -357,7 +357,7 @@
 		B224A47BCD8229001F5ECDADC9C3CE5C /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		B558936178EE3E2289F8746747D4290D /* LOTShapeTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeTransform.h; path = "lottie-ios/Classes/Models/LOTShapeTransform.h"; sourceTree = "<group>"; };
 		B5E8F29936C1C256C7F0F4EC89B9C8F4 /* LOTShapeFill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapeFill.h; path = "lottie-ios/Classes/Models/LOTShapeFill.h"; sourceTree = "<group>"; };
-		B626802DF27717436835BBFE0CFDA4E4 /* URWeatherView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = URWeatherView.framework; path = URWeatherView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B626802DF27717436835BBFE0CFDA4E4 /* URWeatherView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URWeatherView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6509D21BC86A414F26919667B4BE95B /* LOTShapeRectangle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeRectangle.m; path = "lottie-ios/Classes/Models/LOTShapeRectangle.m"; sourceTree = "<group>"; };
 		B7BED4CB65B65590A733BE64EA1D8D5C /* LOTShapePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LOTShapePath.h; path = "lottie-ios/Classes/Models/LOTShapePath.h"; sourceTree = "<group>"; };
 		B88805121340B1DDF867ECEFE8844D23 /* URWeatherView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = URWeatherView.modulemap; sourceTree = "<group>"; };
@@ -393,7 +393,7 @@
 		D84C3422BC86FD52158EC7887DE5F8D6 /* MyParticleDust2.sks */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.sks; name = MyParticleDust2.sks; path = URWeatherView/SpriteAssets/MyParticleDust2.sks; sourceTree = "<group>"; };
 		DA7BAE6A180E95AED5A75A11C61B87B6 /* URWeatherView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URWeatherView-prefix.pch"; sourceTree = "<group>"; };
 		DDB90A22144A73878668B8BE2DEA2805 /* UIBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIBezierPath.h; path = "lottie-ios/Classes/MacCompatability/UIBezierPath.h"; sourceTree = "<group>"; };
-		DE09A59C2379F0E8B65059DF29F8F489 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE09A59C2379F0E8B65059DF29F8F489 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE555A4FFEDD30196C6AA0C1D34EA27E /* UIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIColor.m; path = "lottie-ios/Classes/MacCompatability/UIColor.m"; sourceTree = "<group>"; };
 		DEC5888D972639BFAB85DDB053091F51 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		DFD83545ED0A1762A62BC00FE11DA2F9 /* URShockWaveFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URShockWaveFilter.swift; path = URWeatherView/Filter/URShockWaveFilter.swift; sourceTree = "<group>"; };
@@ -478,7 +478,6 @@
 				C1C12DD5D932289DF6D6C5564843CCD2 /* Resources */,
 				4F6ECA57C5277AAD10188612B16787E7 /* Support Files */,
 			);
-			name = URWeatherView;
 			path = URWeatherView;
 			sourceTree = "<group>";
 		};
@@ -504,7 +503,6 @@
 				38D323C5CA3F72722967B347DD1F4120 /* Validation.swift */,
 				D958D057A792C15979BDA88E74842305 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -674,7 +672,6 @@
 				C67C982242D28B90CDA37F3DA750F8D2 /* UIColor+Expanded.m */,
 				373DE4E75ADD5AB339BD502FCB696964 /* Support Files */,
 			);
-			name = "lottie-ios-extension";
 			path = "lottie-ios-extension";
 			sourceTree = "<group>";
 		};
@@ -707,7 +704,6 @@
 				CA82AFBECBD853986C59A0A6D073818A /* SwiftyJSON.swift */,
 				FD261B595A1D7FBF8C667E1F979F7F19 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -992,7 +988,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1225,11 +1221,7 @@
 				INFOPLIST_FILE = "Target Support Files/lottie-ios-extension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/lottie-ios-extension/lottie-ios-extension.modulemap";
 				PRODUCT_MODULE_NAME = LottieEx;
 				PRODUCT_NAME = LottieEx;
@@ -1261,11 +1253,7 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1398,6 +1386,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -1419,11 +1408,7 @@
 				INFOPLIST_FILE = "Target Support Files/lottie-ios-extension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/lottie-ios-extension/lottie-ios-extension.modulemap";
 				PRODUCT_MODULE_NAME = LottieEx;
 				PRODUCT_NAME = LottieEx;
@@ -1454,11 +1439,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
 				PRODUCT_NAME = SwiftyJSON;
@@ -1491,11 +1472,7 @@
 				INFOPLIST_FILE = "Target Support Files/URWeatherView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/URWeatherView/URWeatherView.modulemap";
 				PRODUCT_MODULE_NAME = URWeatherView;
 				PRODUCT_NAME = URWeatherView;
@@ -1529,11 +1506,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Clime/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Clime/Pods-Clime.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1568,11 +1541,7 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1605,11 +1574,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Clime/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Clime/Pods-Clime.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1645,11 +1610,7 @@
 				INFOPLIST_FILE = "Target Support Files/URWeatherView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/URWeatherView/URWeatherView.modulemap";
 				PRODUCT_MODULE_NAME = URWeatherView;
 				PRODUCT_NAME = URWeatherView;
@@ -1681,11 +1642,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
 				PRODUCT_NAME = SwiftyJSON;

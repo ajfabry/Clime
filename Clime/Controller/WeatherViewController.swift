@@ -17,26 +17,30 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     let constants = Constants()
     
     let WEATHER_URL = "http://api.openweathermap.org/data/2.5/forecast"
+    let UNSPLASH_URL = "https://api.unsplash.com/photos/random/"
     
     let locationManager = CLLocationManager()
     let weatherDataModel = WeatherDataModel()
 
     @IBOutlet weak var temperatureLabel: UILabel!
-    @IBOutlet weak var clothingLabel: UILabel!      // TODO: - add functionality
+    @IBOutlet weak var clothingLabel: UILabel!
+    @IBOutlet weak var umbrellaLabel: UILabel!
     @IBOutlet weak var highTemperatureLabel: UILabel!
     @IBOutlet weak var lowTemperatureLabel: UILabel!    
     @IBOutlet weak var mainView: URWeatherView!
+    @IBOutlet weak var background: UIImageView!
+    var imageName : String = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.mainView.initView(mainWeatherImage: #imageLiteral(resourceName: "campus"), backgroundImage: #imageLiteral(resourceName: "brightdesktop"))
-        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        self.mainView.initView(mainWeatherImage: #imageLiteral(resourceName: "transparent foreground"), backgroundImage: #imageLiteral(resourceName: "transparent foreground"))
     }
     
     // MARK: - Weather Effects
@@ -45,6 +49,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         let weather: URWeatherType = condition
         self.mainView.startWeatherSceneBulk(weather, debugOption: true, additionalTask: {
             // task what you want to do after showing the weather effect...
+            print("showing weather condition \(condition)")
         })
     }
     
@@ -89,6 +94,25 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    func getPicture(url: String, parameters: [String: String], completion: (_: String) -> Void) {
+        Alamofire.request(url, method: .get, parameters: parameters).responseJSON {
+            response in
+            if response.result.isSuccess {
+                print("Photo data retrieved successfully")
+                let photoJSON : JSON = JSON(response.result.value!)
+                self.updatePhotoData(json: photoJSON) {
+                    (_: String) in
+                    print("photo downloaded?")
+                }
+            }
+            else {
+                print("Error \(String(describing: response.result.error))")
+            }
+        }
+        
+        completion("finished")
+    }
+    
     // MARK: - JSON Parsing
     
     func updateWeatherData(json: JSON) {
@@ -109,20 +133,39 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
             
             guard let currentCondition = json["list"][0]["weather"][0]["id"].int else {fatalError("Weather Data Unavailable")}
             weatherDataModel.weatherID = currentCondition
+            _ = weatherDataModel.updateAnimation(condition: currentCondition)
             
             updateUI()
         }
     }
     
+    func updatePhotoData(json: JSON, completion: (_: String) -> Void) {
+        let downloadLocation = json["urls"]["regular"].string!
+        
+        let url = URL(string: downloadLocation)
+        let data = try? Data(contentsOf: url!)
+        background.image = UIImage(data: data!)
+        
+        completion("photo data updated!")
+    }
+    
     // MARK: - UI Updating
     
     func updateUI() {
+        print("image query: \(weatherDataModel.imageQuery)")
+        let params = ["orientation" : "portrait", "client_id" : constants.accessKey, "query" : weatherDataModel.imageQuery]
+        getPicture(url: UNSPLASH_URL, parameters: params) {
+            (_: String) in
+            print("done")
+        }
+                
         temperatureLabel.text = "\(weatherDataModel.currentTemp)°"
         highTemperatureLabel.text = "High: \(weatherDataModel.highTemp)°"
         lowTemperatureLabel.text = "Low: \(weatherDataModel.lowTemp)°"
         clothingLabel.text = weatherDataModel.updateClothing(temperature: weatherDataModel.currentTemp)
+        umbrellaLabel.text = weatherDataModel.umbrellaRecommended
         showWeather(condition: weatherDataModel.updateAnimation(condition: weatherDataModel.weatherID))
+        
     }
-
 }
 
