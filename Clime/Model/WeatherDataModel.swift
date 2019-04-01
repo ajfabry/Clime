@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import URWeatherView
 
 class WeatherDataModel {
     
@@ -29,61 +28,49 @@ class WeatherDataModel {
         }
     }
     
-    func updateAnimation(condition: Int) -> URWeatherType {
+    func updateAnimation(condition: Int) {
         switch (condition) {
 
         case 0...300 :      // thunderstorm
             imageQuery = "thuderstorm"
             umbrellaRecommended = "Umbrella recommended"
-            return .lightning
 
         case 301...500 :    // light rain
             imageQuery = "light rain"
             umbrellaRecommended = "Umbrella recommended"
-            return .rain
 
         case 501...600 :    // shower
             imageQuery = "rain"
             umbrellaRecommended = "Umbrella recommended"
-            return .rain
 
         case 601...700 :    // snow
             imageQuery = "snow"
-            return .snow
 
         case 701...771 :    // fog
             imageQuery = "fog"
-            return .smoke
 
         case 772...799 :    // storm
             imageQuery = "storm"
             umbrellaRecommended = "Umbrella recommended"
-            return .lightning
 
         case 800 :          // sunny
             imageQuery = "sunny"
-            return .shiny
 
         case 801...804 :    // cloudy
             imageQuery = "cloudy"
-            return .cloudy
 
         case 900...903, 905...1000  :   // storm
             imageQuery = "storm"
             umbrellaRecommended = "Umbrella recommended"
-            return .lightning
 
         case 903 :          // snow
             imageQuery = "snow"
-            return .snow
 
         case 904 :          // sunny
             imageQuery = "sunny"
-            return .shiny
 
         default :
             imageQuery = "sunny"
-            return .none
         }
     }
 }

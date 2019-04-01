@@ -6,6 +6,6 @@ target 'Clime' do
   # Pods for Clime
     pod 'SwiftyJSON'
     pod 'Alamofire'
+    pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
     
-
 end

@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 import CoreLocation
-import URWeatherView
+import ChameleonFramework
 
 class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -27,7 +27,6 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var umbrellaLabel: UILabel!
     @IBOutlet weak var highTemperatureLabel: UILabel!
     @IBOutlet weak var lowTemperatureLabel: UILabel!    
-    @IBOutlet weak var mainView: URWeatherView!
     @IBOutlet weak var background: UIImageView!
     var imageName : String = ""
     
@@ -40,21 +39,14 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        self.mainView.initView(mainWeatherImage: #imageLiteral(resourceName: "transparent foreground"), backgroundImage: #imageLiteral(resourceName: "transparent foreground"))
     }
     
-    // MARK: - Weather Effects
-    
-    func showWeather(condition: URWeatherType) {    // TODO: - sync effect with weather data
-        let weather: URWeatherType = condition
-        self.mainView.startWeatherSceneBulk(weather, debugOption: true, additionalTask: {
-            // task what you want to do after showing the weather effect...
-            print("showing weather condition \(condition)")
-        })
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setNeedsStatusBarAppearanceUpdate()
     }
-    
-    func removeWeather() {
-        self.mainView.stop()
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
     
     // MARK: - Location Manager
@@ -158,14 +150,26 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
             (_: String) in
             print("done")
         }
-                
+        
         temperatureLabel.text = "\(weatherDataModel.currentTemp)°"
         highTemperatureLabel.text = "High: \(weatherDataModel.highTemp)°"
         lowTemperatureLabel.text = "Low: \(weatherDataModel.lowTemp)°"
         clothingLabel.text = weatherDataModel.updateClothing(temperature: weatherDataModel.currentTemp)
         umbrellaLabel.text = weatherDataModel.umbrellaRecommended
-        showWeather(condition: weatherDataModel.updateAnimation(condition: weatherDataModel.weatherID))
-        
+//        updateTextColor()
+    }
+    
+    func updateTextColor() {
+        print("Waiting to update text color")
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+            self.temperatureLabel.textColor = ContrastColorOf(AverageColorFromImage(self.background.image!), returnFlat: true)
+            self.highTemperatureLabel.textColor = ContrastColorOf(AverageColorFromImage(self.background.image!), returnFlat: true)
+            self.lowTemperatureLabel.textColor = ContrastColorOf(AverageColorFromImage(self.background.image!), returnFlat: true)
+            self.clothingLabel.textColor = ContrastColorOf(AverageColorFromImage(self.background.image!), returnFlat: true)
+            self.umbrellaLabel.textColor = ContrastColorOf(AverageColorFromImage(self.background.image!), returnFlat: true)
+            
+            print("updated text color!")
+        })
     }
 }
 

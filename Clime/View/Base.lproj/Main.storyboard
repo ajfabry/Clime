@@ -23,11 +23,6 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="686-HI-u7T" customClass="URWeatherView" customModule="URWeatherView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shorts and short sleeves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqL-oV-EPn" userLabel="clothingLabel">
                                 <rect key="frame" x="112" y="338" width="190" height="60"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,7 +83,7 @@
                                     <constraint firstItem="yIt-z2-Ijg" firstAttribute="centerY" secondItem="biT-RS-qyU" secondAttribute="centerY" id="ZPL-KY-hsg"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shorts and short sleeves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlW-hA-nuz" userLabel="umbrellaLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Umbrella recommended" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlW-hA-nuz" userLabel="umbrellaLabel">
                                 <rect key="frame" x="112" y="377" width="190" height="21"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -102,13 +97,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="686-HI-u7T" secondAttribute="bottom" id="7mw-nS-xIb"/>
                             <constraint firstItem="ZlW-hA-nuz" firstAttribute="leading" secondItem="GqL-oV-EPn" secondAttribute="leading" id="COc-j8-QcU"/>
-                            <constraint firstItem="686-HI-u7T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H5f-p3-2on"/>
-                            <constraint firstItem="686-HI-u7T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kbw-ip-cV0"/>
                             <constraint firstItem="ZlW-hA-nuz" firstAttribute="top" secondItem="biT-RS-qyU" secondAttribute="bottom" constant="47" id="LdE-Pg-nGj"/>
                             <constraint firstItem="rhn-xp-VZs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NsT-Vh-8Jw"/>
-                            <constraint firstItem="686-HI-u7T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YGF-eL-2wM"/>
                             <constraint firstItem="GqL-oV-EPn" firstAttribute="top" secondItem="biT-RS-qyU" secondAttribute="bottom" constant="8" id="bbf-UT-MVA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZlW-hA-nuz" secondAttribute="bottom" constant="338" id="cMy-Tp-aSv"/>
                             <constraint firstItem="biT-RS-qyU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="enN-oR-feR"/>
@@ -128,7 +119,6 @@
                         <outlet property="clothingLabel" destination="GqL-oV-EPn" id="rSd-N0-3aX"/>
                         <outlet property="highTemperatureLabel" destination="HG9-LD-mmL" id="ahX-Wo-Cab"/>
                         <outlet property="lowTemperatureLabel" destination="WSg-xa-WSk" id="BqR-un-z1o"/>
-                        <outlet property="mainView" destination="686-HI-u7T" id="UYp-26-5fb"/>
                         <outlet property="temperatureLabel" destination="E98-If-fvk" id="9ha-JC-5VN"/>
                         <outlet property="umbrellaLabel" destination="ZlW-hA-nuz" id="Eex-2h-lTw"/>
                     </connections>

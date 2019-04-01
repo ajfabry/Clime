@@ -5,6 +5,5 @@ Simple weather app built using Swift 4.2. Displays forecasted high, forecasted l
 Uses Unsplash API to set background according to current weather conditions.
 
 Still TODO:
-- Fix URWeatherKit integration
-- Make onscreen text contrast from background automataically
+- Integrate transluscent card view for visibility
 - Add daily notification
