@@ -5,5 +5,5 @@ Simple weather app built using Swift 5.0. Displays forecasted high, forecasted l
 Uses Unsplash API to set background according to current weather conditions.
 
 ### Still TODO:
-- Integrate transluscent card view for visibility
+- Add location selection
 - Add daily notification
