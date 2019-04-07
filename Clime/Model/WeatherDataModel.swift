@@ -46,9 +46,11 @@ class WeatherDataModel {
 
         case 601...700 :    // snow
             imageQuery = "snow"
+            umbrellaRecommended = "Umbrella recommended"
 
         case 701...771 :    // fog
             imageQuery = "fog"
+            umbrellaRecommended = "No umbrella necessary"
 
         case 772...799 :    // storm
             imageQuery = "storm"
@@ -56,9 +58,11 @@ class WeatherDataModel {
 
         case 800 :          // sunny
             imageQuery = "sunny"
+            umbrellaRecommended = "No umbrella necessary"
 
         case 801...804 :    // cloudy
             imageQuery = "cloudy"
+            umbrellaRecommended = "No umbrella necessary"
 
         case 900...903, 905...1000  :   // storm
             imageQuery = "storm"
@@ -66,12 +70,15 @@ class WeatherDataModel {
 
         case 903 :          // snow
             imageQuery = "snow"
+            umbrellaRecommended = "Umbrella recommended"
 
         case 904 :          // sunny
             imageQuery = "sunny"
+            umbrellaRecommended = "No umbrella necessary"
 
         default :
             imageQuery = "sunny"
+            umbrellaRecommended = "No umbrella necessary"
         }
     }
 }
