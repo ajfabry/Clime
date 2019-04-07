@@ -20,6 +20,7 @@ class WeatherDataModel {
     
     func updateClothing(temperature: Int) -> String {
         if temperature < 50 {
+            print("heavy coat")
             return "Heavy coat recommended"
         } else if temperature < 65 {
             return "Light jacket recommended"

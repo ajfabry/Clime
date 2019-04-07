@@ -154,7 +154,10 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         temperatureLabel.text = "\(weatherDataModel.currentTemp)°"
         highTemperatureLabel.text = "High: \(weatherDataModel.highTemp)°"
         lowTemperatureLabel.text = "Low: \(weatherDataModel.lowTemp)°"
+        self.view.bringSubviewToFront(clothingLabel)
+//        clothingLabel.layer.zPosition = 1
         clothingLabel.text = weatherDataModel.updateClothing(temperature: weatherDataModel.currentTemp)
+        print(clothingLabel.text)
         umbrellaLabel.text = weatherDataModel.umbrellaRecommended
 //        updateTextColor()
     }
