@@ -28,11 +28,41 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var highTemperatureLabel: UILabel!
     @IBOutlet weak var lowTemperatureLabel: UILabel!    
     @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var temperatureView: UIView!
+    @IBOutlet weak var umbrellaView: UIView!
+    @IBOutlet weak var clothingView: UIView!
     var imageName : String = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        temperatureView.layer.cornerRadius = 10
+        temperatureView.backgroundColor = UIColor(white: 0.8, alpha: 0.8)
+        umbrellaView.layer.cornerRadius = 10
+        umbrellaView.backgroundColor = UIColor(white: 0.8, alpha: 0.8)
+        clothingView.layer.cornerRadius = 10
+        clothingView.backgroundColor = UIColor(white: 0.8, alpha: 0.8)
+        
+        // set initial view positions off screen
+        UIView.animate(withDuration: 0) {
+            self.temperatureView.transform = CGAffineTransform(translationX: -350, y: 0)
+            self.umbrellaView.transform = CGAffineTransform(translationX: -350, y: 0)
+            self.clothingView.transform = CGAffineTransform(translationX: -350, y: 0)
+        }
+        
+        // spring views into position
+        UIView.animate(withDuration: 1.0, delay: 1, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: .curveEaseOut, animations: {
+            self.temperatureView.transform = CGAffineTransform(translationX: 0, y: 0)
+        }, completion: nil)
+        UIView.animate(withDuration: 1.0, delay: 1.4, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: .curveEaseOut, animations: {
+            self.umbrellaView.transform = CGAffineTransform(translationX: 0, y: 0)
+        }, completion: nil)
+        UIView.animate(withDuration: 1.0, delay: 1.8, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: .curveEaseOut, animations: {
+            self.clothingView.transform = CGAffineTransform(translationX: 0, y: 0)
+        }, completion: nil)
+        
+
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
@@ -157,7 +187,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         self.view.bringSubviewToFront(clothingLabel)
 //        clothingLabel.layer.zPosition = 1
         clothingLabel.text = weatherDataModel.updateClothing(temperature: weatherDataModel.currentTemp)
-        print(clothingLabel.text)
+        print(clothingLabel.text!)
         umbrellaLabel.text = weatherDataModel.umbrellaRecommended
 //        updateTextColor()
     }
